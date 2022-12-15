@@ -1,0 +1,220 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+
+
+.header{
+    
+    margin-bottom: 15px;
+    height: 100px;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ht{
+    margin: auto 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: antiquewhite;
+    display: inline-block;
+}
+
+.tel{
+    margin: auto 20px;
+    font-size: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(246, 240, 232);
+}
+
+.tel:hover{
+    color: rgb(133, 124, 112);
+}
+
+
+body{
+    background-color: bisque;
+    padding: auto 100px;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    width: 400px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+
+.foto{
+background-color: rgb(141, 141, 141);
+display: flex;
+padding: 30px;
+border-radius: 20px;
+width: 1100px;
+max-width: 100%;
+margin: 0 auto;
+
+
+}
+.img{
+    width: 350px;
+    height: 300px;
+    border-radius: 100px;
+}
+
+.block{
+    display: inline-block;
+    width: 800px;
+    margin: 30px 100px;
+}
+
+.a{
+    display: inline-block;
+    color: aliceblue;
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 14px 30px;
+}
+
+a:hover{
+    background-color: black;
+    transition: background-color .5s;
+}
+
+.hobby{
+    
+    height: 350px;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: violet;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    width: 33.3333%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+   
+}
+
+.content:hover .content__itm{
+    opacity: 1;
+}
+
+.content__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.content__itm{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 205, 69, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity .2s linear;
+    
+}
+
+.contect__text{
+    margin-top: 120px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.mess{
+    width: 1100px;
+    max-width: 100%;
+    margin: 15px auto;
+    background-color: rgba(153, 153, 153, 0.999);
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+   width: 30%;
+   
+}
+
+.btn{
+    width: 150px;
+    color: aliceblue;
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+    padding: 14px 30px;
+}
+
+.btn:hover{
+    background-color: black;
+    transition: background-color .5s;
+    cursor: pointer;
+
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer_title{
+    color: aliceblue;
+    margin: 0;
+}
+
+
+ @media (max-width: 650px){
+.tel{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.ht{
+    font-size: 30px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    width: 250px;
+}
+.block{
+    margin: 0;
+}
+
+
+ }
